@@ -142,7 +142,7 @@ public class GerritCommand {
             String incomingLine = null;
 
             InputStreamReader err = new InputStreamReader(channel.getErrStream());
-            InputStreamReader out = new InputStreamReader(channel.getInputStream());
+            InputStreamReader out = new InputStreamReader(channel.getInputStream(), "utf-8");
 
             reader = new BufferedReader(out);
 
